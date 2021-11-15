@@ -1,0 +1,161 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/style.css' %}"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ceviche+One&display=swap" rel="stylesheet">
+
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 8px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0 -5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* Style the counter cards */
+  .card {
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-color: transparent;
+  }
+</style>
+
+    <title>Abdael's Portfolio</title>
+  </head>
+
+  {% include "navbar.html" %}
+  <body style="background-image: url(static/css/background.jpg)">
+    <h1
+      class="title"
+      style="
+        text-align: center;
+        font-family: 'Ceviche One', cursive;
+        font-size: 100px;
+        margin-top: 20px;
+        text-shadow: 2px 2px aquamarine;
+      "
+    >
+      Welcome to My Portfolio!!
+    </h1>
+    <br></br>
+    <div class="card" style="margin: auto; float: none; margin-bottom: 10px; text-align: center; width:800px; height: 900px;  background-color: transparent;">
+      <img class="mx-auto d-block" src="/static/css/myimage.jpg" class="card-img-top" alt="..." style="width: 500px; height:450px; border-radius: 20px;">
+      <div class="card-body" style="text-align: center;">
+        <h3 class="card-title" style="font-family: 'Mochiy Pop P One', sans-serif; text-shadow: 2px 2px aquamarine;">Abdael Mora</h3>
+        <h3 class="card-title" style="font-family: 'Mochiy Pop P One', sans-serif; text-shadow: 2px 2px aquamarine;">Full Stack Developer</h3>
+        <h5 class="card-text" style="font-family: 'Mochiy Pop P One', sans-serif;">I'm a Full-Stack Developer specialized in frontend and backend web development for complex web applications. I work around HTML, CSS, Javascript, Python, Django, GIT, Bootstrap and more, with a Passion to learn more each and every day.</h5>
+        <div class="row">
+          <div class="column">
+            <div class="card" style="width: 120px; background-color: transparent;">
+              <a href="https://www.linkedin.com/in/abdael-mora-33694020b/"><img src="/static/css/linkedin-dark.png" style="width: 60px; text-align: center;"></a>
+              </div>
+          </div>
+          <div class="column">
+            <div class="card" style="width: 120px; background-color: transparent;">
+              <a href="mailto: abdaelmora1@gmail.com"><img src="/static/css/gmail-dark.png" style="width: 60px; text-align: center;"></a>
+              </div>
+          </div>
+
+          <div class="column">
+            <div class="card" style="width: 120px; background-color: transparent;">
+              <a href="https://twitter.com/AbdaelMora"><img src="/static/css/twitter-dark.png" style="width: 60px; text-align: center;"></a>
+              </div>
+          </div>
+
+          <div class="column">
+            <div class="card" style="width: 120px; background-color: transparent;">
+              <a href="https://github.com/amoralozano"><img src="/static/css/github.png" style="width: 60px; text-align: center;"></a>
+              </div>
+          </div>
+
+        </div>
+        <a href="/myprojects/" class="btn btn-primary" style="width: 200px; height: 45px; font-size: 18px; background-color: black; border-color: aquamarine;">See My Work!</a>
+      </div>
+    </div>
+  <!-- <div class="row" style="margin-top: 200px; margin-left: 600px;">
+    <div style="display: block; text-align: center;">
+      <div class="card" style="background-color: transparent; height: 300px; width: 300px; border-color: transparent;">
+        <img src="/static/css/abdael.jpg" class="card-img-top" alt="..." style=" width:400px; height: 500px;" />
+      </div>
+      </div> -->
+    <!-- <div class="column">
+      <div class="card" style="background-color: transparent; height: 300px; border-color: transparent;">
+      <div class="card-body" style="height: 200px; width: 500px;">
+        <h4 class="card-title">WELCOME!</h4>
+        <h1 class="card-text">I Am Full-Stack Developer</h1>
+        <h4 class="card-title">Full Stack Developer</h4>
+        <br></br>
+        <a
+          href="/myprojects"
+          class="btn btn-primary"
+          style="width: 200px; height: 50px"
+          >See My Work</a
+        >
+      </div>
+    </div>
+    </div> -->
+
+  </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
